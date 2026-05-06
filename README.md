@@ -25,7 +25,7 @@ A locally hosted League of Legends stat tracker that pulls live data from the Ri
 ## Requirements
 
 - [Node.js](https://nodejs.org) (v16 or higher recommended)
-- A Riot Games API key — get one free at [developer.riotgames.com](https://developer.riotgames.com)
+- A Riot Games API key - get one free at [developer.riotgames.com](https://developer.riotgames.com)
 
 > **Note:** Free development API keys expire after 24 hours. You will need to regenerate one each day.
 
@@ -35,7 +35,7 @@ A locally hosted League of Legends stat tracker that pulls live data from the Ri
 
 | File | Description |
 |------|-------------|
-| `index.html` | The frontend UI that runs in your browser — handles search, displays all stats, charts, match history, and scoreboards |
+| `index.html` | The frontend UI that runs in your browser - handles search, displays all stats, charts, match history, and scoreboards |
 | `server.js` | A local Node.js/Express proxy server that forwards requests to the Riot API, working around browser CORS restrictions |
 | `package.json` | Defines the Node.js dependencies (Express, node-fetch, cors) installed via `npm install` |
 | `CHANGELOG.md` | Full history of changes made to the project across all versions |
@@ -83,7 +83,7 @@ lol-tracker/
 1. Open the folder in Finder
 2. Right-click the folder and select **New Terminal at Folder**
 
-**Either OS — drag and drop method:**
+**Either OS - drag and drop method:**
 1. Open a terminal normally
 2. Type `cd ` (with a space), then drag the project folder into the terminal window
 3. Press Enter
@@ -132,7 +132,7 @@ in your browser.
 
 ## How to Use
 
-1. Enter your **summoner name** and **tag** (the part after the `#` in your Riot ID — e.g. for `PlayerName#EUW` enter `PlayerName` and `EUW`)
+1. Enter your **summoner name** and **tag** (the part after the `#` in your Riot ID - e.g. for `PlayerName#EUW` enter `PlayerName` and `EUW`)
 2. Select your **region** from the dropdown
 3. Paste your **Riot API key** (starts with `RGAPI-`)
 4. Click **Search**
@@ -147,10 +147,10 @@ Loading takes around 10-20 seconds as match data is fetched in batches to avoid 
 |---------|-----|
 | `Cannot find module 'express'` | Run `npm install` in the project folder |
 | `Cannot reach local server` | Make sure `node server.js` is running in a terminal |
-| `Rate Limit Exceeded` | Wait 30 seconds and try again — the free dev key has a limit of 100 requests per 2 minutes |
-| API key error | Your key may have expired — generate a new one at [developer.riotgames.com](https://developer.riotgames.com) |
+| `Rate Limit Exceeded` | Wait 30 seconds and try again - the free dev key has a limit of 100 requests per 2 minutes |
+| API key error | Your key may have expired - generate a new one at [developer.riotgames.com](https://developer.riotgames.com) |
 | No matches showing | Check your summoner name and tag are correct, and that the right region is selected |
-| Wrong region | EUW accounts use `EUW` region — make sure the dropdown matches your account's server |
+| Wrong region | EUW accounts use `EUW` region - make sure the dropdown matches your account's server |
 
 ---
 
@@ -184,4 +184,4 @@ To stay within these limits, match data is fetched in batches of 5 with a short 
 
 ## Version
 
-Current version: **v1.6** — see [CHANGELOG.md](CHANGELOG.md) for full history.
+Current version: **v1.6** - see [CHANGELOG.md](CHANGELOG.md) for full history.
