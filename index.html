@@ -410,6 +410,8 @@ tr:last-child td { border-bottom: none; }
 .sb-champ-icon img { width: 28px; height: 28px; display: block; object-fit: cover; transform: scale(1.1); }
 .sb-spell { width: 16px; height: 16px; border-radius: 3px; overflow: hidden; background: var(--bg1); border: 1px solid var(--border); }
 .sb-spell img { width: 16px; height: 16px; display: block; }
+.sb-keystone { width: 32px; height: 32px; border-radius: 50%; overflow: hidden; background: var(--bg1); border: 1px solid var(--border2); flex-shrink: 0; }
+.sb-keystone img { width: 32px; height: 32px; display: block; object-fit: cover; }
 .sb-name { font-size: 12px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .sb-name.is-you { color: var(--accent); font-weight: 700; }
 .sb-kda { font-size: 12px; color: var(--text2); white-space: nowrap; }
@@ -431,8 +433,8 @@ tr:last-child td { border-bottom: none; }
   <div class="banner-mist"></div>
   <div class="banner-overlay"></div>
   <div class="banner-content">
-    <div class="page-header"><h1>LoL Stat Tracker</h1><span class="version-tag">v1.7</span></div>
-    <div style="font-size:13px;color:var(--text2);margin-top:6px;">Shadow Isles Edition &nbsp;&middot;&nbsp; Powered by Riot Games API &nbsp;&middot;&nbsp; Created by Cassini</div>
+    <div class="page-header"><h1>LoL Stat Tracker</h1><span class="version-tag">v1.8</span></div>
+    <div style="font-size:13px;color:var(--text2);margin-top:6px;">Shadow Isles Edition &nbsp;&middot;&nbsp; Powered by Riot Games API</div>
   </div>
 </div>
 
@@ -1024,10 +1026,7 @@ function renderMatchList(matches) {
 
           // Keystone
           var ksDiv = document.createElement('div');
-          ksDiv.className = 'sb-spell';
-          ksDiv.style.borderRadius = '50%';
-          ksDiv.style.width = '32px';
-          ksDiv.style.height = '32px';
+          ksDiv.className = 'sb-keystone';
           if (pl.keystone) {
             var ksImg = document.createElement('img');
             ksImg.src = 'https://ddragon.leagueoflegends.com/cdn/img/' + pl.keystone.icon;
