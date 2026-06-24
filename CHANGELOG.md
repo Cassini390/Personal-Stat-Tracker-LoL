@@ -1,5 +1,11 @@
 # LoL Stat Tracker - Changelog
 
+## v4.4 - UX refinements
+- **Sample data toggle** — a "◈ Sample data: On/Off" button sits alongside the auto-refresh toggle below the search form. Switching it off clears the dossier to a blank slate so the app starts empty; switching it on restores the deterministic sample dossier. Preference is saved to `localStorage` and restored on reload.
+- **Champion filter display names** — champion names in the queue filter now use the same `displayChamp()` lookup as the match rows, giving correct capitalisation and spacing (e.g. Tahm Kench, Twisted Fate, Kai'Sa) instead of lowercased internal Data Dragon keys.
+
+---
+
 ## v4.3 - Editorial pass
 - **Ghost section numerals** — a faint oversized `01`–`04` sits behind each section eyebrow (Assessment, Field findings, Biometric profile, Field record). Pure editorial texture, pointer-events-none.
 - **Masthead cursor spotlight** — a radial gold highlight follows the cursor across the sticky header in real time, giving it a physical light-source feel.

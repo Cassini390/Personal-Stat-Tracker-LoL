@@ -25,6 +25,7 @@ Every finding suppresses itself when the sample is too thin to claim honestly, a
 - Expandable full scoreboard for each match (all 10 players, builds, runes, spells)
 - Champion dossier with gated win rate, a mastery trend, and pool-concentration signal
 - Win/loss streak detection, last-search memory, and an optional auto-refresh of your last search
+- **Sample data toggle** — load the app with the built-in sample dossier or a blank slate; preference persists across reloads
 - Sticky section nav, orchestrated load animation that respects `prefers-reduced-motion`, and a responsive layout down to mobile
 
 ---
@@ -296,4 +297,4 @@ Match data is fetched in batches of 5 with a short pause between each batch to s
 
 ## Version
 
-Current version: **v4.0 — React interface** — see [CHANGELOG.md](CHANGELOG.md) for full history.
+Current version: **v4.4 — UX refinements** — see [CHANGELOG.md](CHANGELOG.md) for full history.
